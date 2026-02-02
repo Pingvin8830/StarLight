@@ -59,7 +59,10 @@ void loop() {
     lastControl = millis();
   } else {
     speed = 1023 - analogRead(RED_CONTROL_PIN);
-    if (millis() - lastControl > speed) autoStep++;
+    if (millis() - lastControl > speed) {
+      autoStep++;
+      lastControl = millis();
+    }
     if (autoStep > 23) autoStep = 0;
     analogWrite(RED_PIN,   255 - COLORS[autoStep][0]);
     analogWrite(GREEN_PIN, 255 - COLORS[autoStep][1]);
