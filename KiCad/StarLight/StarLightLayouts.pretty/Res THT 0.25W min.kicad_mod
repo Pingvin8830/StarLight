@@ -1,0 +1,154 @@
+(footprint "Res THT 0.25W min"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(tags "res r tht ")
+	(property "Reference" "REF**"
+		(at 6.35 -2.54 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "b0b26953-0dca-4dba-8154-77737978fcba")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Без имени"
+		(at 5.08 2.54 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "7a420693-5e41-422e-983e-8c675f90c27f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://static.chipdip.ru/lib/056/DOC000056035.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9c66dbca-deb3-458f-9b0c-5c330b7bb22b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c578dfdd-0605-4706-9cef-8bb72b8690cb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Href" "https://www.chipdip.ru/product/cf-100-s1-4-1vt-1-om-5-rezistor-uglerodistyy-11677"
+		(at 0 0 0)
+		(layer "F.CrtYd")
+		(hide yes)
+		(uuid "ad0066fb-1362-4c1f-b1cc-46dc06693465")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -0.96 -1.26)
+		(end 10.96 1.26)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "f2ea59de-444f-43aa-8255-a53a8005b370")
+	)
+	(fp_rect
+		(start -1.1 -1.4)
+		(end 11.1 1.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "f3113304-921c-4043-af6b-e47c041082f8")
+	)
+	(fp_rect
+		(start 0 -0.3)
+		(end 2 0.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "bf889f6c-5098-4862-907b-d1dfd3bf3586")
+	)
+	(fp_rect
+		(start 2 -1.15)
+		(end 8 1.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "6043e793-ef90-40f3-a67f-f2584cdbd818")
+	)
+	(fp_rect
+		(start 8 -0.3)
+		(end 10 0.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "85417c63-824d-4b4d-a24f-77bed6b6e09c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 5.08 5.08 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "02a43989-e539-47a4-bdfb-0279fcae289c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.7 1.7)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "381b9423-468d-4dc9-b0f2-a084ac5feb1d")
+	)
+	(pad "2" thru_hole circle
+		(at 10 0)
+		(size 1.7 1.7)
+		(drill 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a85727a1-acb4-4bb8-964f-c55e198c2701")
+	)
+	(embedded_fonts no)
+)

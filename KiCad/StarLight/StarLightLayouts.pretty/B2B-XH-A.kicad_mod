@@ -1,0 +1,131 @@
+(footprint "B2B-XH-A"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 1.27 -5.08 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "d400ff95-e003-4bcc-a00f-84d96c328e38")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "B2B-XH-A"
+		(at 1.27 3.81 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "707f355b-a490-4461-9410-ee743916a2ee")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://static.chipdip.ru/lib/152/DOC041152528.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ef55a3e5-c606-4eb3-a307-cb0fae516760")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "05430646-b470-4815-bcab-4cb4476b8388")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Href" "https://www.chipdip.ru/product/b2b-xh-a-lf-sn-razem-shtyrevoy-na-platu-2.5-mm-2-jst-9000015961?from=suggest_product"
+		(at 0 0 0)
+		(layer "F.CrtYd")
+		(hide yes)
+		(uuid "f5d84710-3369-4ebf-8772-78f8b6873a82")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -2.56 -3.51)
+		(end 5.06 2.46)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "0f808ced-d5fa-4516-8772-4740042f9448")
+	)
+	(fp_rect
+		(start -2.7 -3.65)
+		(end 5.2 2.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "68c747c1-eb60-45b7-bfca-33b8f0b1ca42")
+	)
+	(fp_rect
+		(start -2.45 -3.4)
+		(end 4.95 2.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "1f2d65d9-18aa-4f0e-9592-dbb7fc197fa1")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 1.27 6.35 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "ecae540e-e8ee-42da-91cc-27b4c2799cec")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 2 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e4435443-1708-4af3-8f56-790b2943eb54")
+	)
+	(pad "2" thru_hole circle
+		(at 2.5 0)
+		(size 2 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "29e6a007-1545-4954-99f2-025ea956b08b")
+	)
+	(embedded_fonts no)
+)

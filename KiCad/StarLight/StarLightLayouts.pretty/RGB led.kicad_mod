@@ -1,0 +1,148 @@
+(footprint "RGB led"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(tags "led rgb")
+	(property "Reference" "REF**"
+		(at 2.54 -5.08 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "f7d365fe-a232-4a48-b6bc-9c25e6ac39d4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "RGB"
+		(at 2.54 3.81 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "03248bc7-9489-4f32-9e14-ccd781f16dd4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://static.chipdip.ru/lib2/a/770/DOC064770748.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8d4abe9f-9686-4951-b5ec-36a8d7ea57d1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ab33a2e0-0bf5-4d14-90a3-debba842fcd0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Href" "https://roboshop.spb.ru/radio/svetodiody/svetodiody-vyvodnye/rgb-led-5mm-bright-cathode"
+		(at 0 0 0)
+		(layer "F.CrtYd")
+		(hide yes)
+		(uuid "741283b0-c511-41c5-8942-d8385443b387")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_circle
+		(center 2.1 0)
+		(end 5.16 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "fdfed52f-bfa4-4d24-aa53-3d1b7b8b5f02")
+	)
+	(fp_circle
+		(center 2.1 0)
+		(end 5.3 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "ddc82077-ce57-456c-934c-963a964580ea")
+	)
+	(fp_circle
+		(center 2.1 0)
+		(end 5.05 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "0be9df3e-847d-4d39-9cc4-e5cd4e3cd4dc")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2.54 6.35 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "89962e3b-786b-4db2-81ea-de17824d6c46")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.2 1.2)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "81457606-4280-48db-8fbc-9fdb5e82ef18")
+	)
+	(pad "2" thru_hole circle
+		(at 1.4 0)
+		(size 1.2 1.2)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "16c9a527-84e3-4664-a97e-c5d949fe296a")
+	)
+	(pad "3" thru_hole rect
+		(at 2.8 0)
+		(size 1.2 1.2)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1e4fd9db-ffd7-47b4-b19b-4926656c0d7a")
+	)
+	(pad "4" thru_hole circle
+		(at 4.2 0)
+		(size 1.2 1.2)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0e03c288-309c-465d-b2fb-22375acfe1e8")
+	)
+	(embedded_fonts no)
+)

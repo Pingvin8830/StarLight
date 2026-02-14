@@ -131,10 +131,6 @@
         "Не используется"
       ],
       [
-        "power_pin_not_driven|749300|292100|2fee46b3-689f-4aa3-86b0-aa54aa6ac764|00000000-0000-0000-0000-000000000000|/894faa47-4b08-4560-8b0a-cc36029e6965|/894faa47-4b08-4560-8b0a-cc36029e6965|",
-        "Не используется"
-      ],
-      [
         "power_pin_not_driven|774700|292100|fdeefc17-a4d1-4b01-a27f-6c8f5a64a162|00000000-0000-0000-0000-000000000000|/894faa47-4b08-4560-8b0a-cc36029e6965|/894faa47-4b08-4560-8b0a-cc36029e6965|",
         "Не используется"
       ]
@@ -509,6 +505,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "space_save_all_events": true,

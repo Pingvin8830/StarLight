@@ -1,0 +1,148 @@
+(footprint "PLS-4"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(tags "pls 4")
+	(property "Reference" "REF**"
+		(at 5.08 -2.54 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "6f6c5dfb-ce6a-43be-b001-c3b9ae3dc1b6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "PLS4"
+		(at 3.81 2.54 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0694bce3-09ed-44bd-9d33-5e5ffda5bb8a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://static.chipdip.ru/lib/177/DOC040177951.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "080c53f7-a0dc-4c7b-9a4e-b0732fcaee11")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6e1e1e61-5a4f-443c-b982-c1f4e97c4402")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Href" "https://www.chipdip.ru/product/pls-4-ds-1021-1x4-vilka-shtyrevaya-2.54mm-1x4pin-connfly-174993133"
+		(at 0 0 0)
+		(layer "F.CrtYd")
+		(hide yes)
+		(uuid "eeab20fd-e9c5-4d5c-ba8e-cabf242f9724")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -1.38 -1.36)
+		(end 9 1.36)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "7580e025-a168-419a-a2cb-4bbc76e6a93a")
+	)
+	(fp_rect
+		(start -1.52 -1.5)
+		(end 9.14 1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "9294b5f1-0033-42b2-8477-763aaf4b93b5")
+	)
+	(fp_rect
+		(start -1.27 -1.25)
+		(end 8.89 1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "8f15b022-101a-4718-891f-cc9a5e476b9b")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 3.81 5.08 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "d9c0e663-7228-409c-9a22-34b35ca8a70b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 2.02 2.02)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "2bd8d91e-9c01-45ba-b618-a1a3ef6718a2")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 0)
+		(size 2.02 2.02)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1c5cb7d4-da02-428e-85a8-17d87d393b38")
+	)
+	(pad "3" thru_hole circle
+		(at 5.08 0)
+		(size 2.02 2.02)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "99611534-9fb6-47b2-9ec5-b998e7358d84")
+	)
+	(pad "4" thru_hole circle
+		(at 7.62 0)
+		(size 2.02 2.02)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f709e699-36f6-4d02-b7aa-9901e3ff0bbd")
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,167 @@
+(footprint "SOT23"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(tags "sot23")
+	(property "Reference" "REF**"
+		(at 1.27 -3.81 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "845aa0c5-1b30-4ad4-b3f4-64ee0253432d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "SOT23"
+		(at 1.27 2.54 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "bf607840-d1d2-4514-933e-a4579c0cc665")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://static.chipdip.ru/lib/035/DOC013035833.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "413a36a7-d08f-4427-99d8-8f697e2628c3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "35217d72-540c-404f-8ad5-f829f5ce3713")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Href" "https://www.chipdip.ru/product/pbss4350t-215-tranzistor-npn-50v-2a-0.48vt-nexperia-9010000220"
+		(at 0 0 0)
+		(layer "F.CrtYd")
+		(hide yes)
+		(uuid "5ec5c47f-a7d8-4612-aebe-8c5a039423a7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -0.85 -2.87)
+		(end 2.75 1.06)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "9b13d430-87db-48e7-9a9c-4987b5381ad7")
+	)
+	(fp_rect
+		(start -0.99 -3.01)
+		(end 2.89 1.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "a8d983a7-4f10-4705-bdae-d845ab3ad7af")
+	)
+	(fp_rect
+		(start -0.55 -1.725)
+		(end 2.45 -0.325)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "7e723044-db0a-4ed9-b644-a04a2804cfa3")
+	)
+	(fp_rect
+		(start -0.24 -0.325)
+		(end 0.24 0.225)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "c4262448-424b-4025-865b-000f7b2113f4")
+	)
+	(fp_rect
+		(start 0.71 -2.275)
+		(end 1.19 -1.725)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "21e9968b-6ea2-4cf1-95e8-ae3bc76635b6")
+	)
+	(fp_rect
+		(start 1.66 -0.325)
+		(end 2.14 0.225)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "84b2d3ef-c5ae-450a-be99-663c95565921")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 1.27 5.08 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "63e9c575-a75d-483b-ae84-460b78c08011")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 0)
+		(size 1.48 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b32a4da7-f51c-402c-abd8-5db632bfacf2")
+	)
+	(pad "2" smd rect
+		(at 1.9 0)
+		(size 1.48 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "bdf0d4dd-3459-40b2-9cfa-ca107ba10441")
+	)
+	(pad "3" smd rect
+		(at 0.95 -2.05)
+		(size 1.48 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "07a6e96d-8e22-494b-8d18-7acba94541a5")
+	)
+	(embedded_fonts no)
+)
