@@ -129,4 +129,15 @@
 		(uuid "4fab18c7-8db6-4d22-970d-b166438de28b")
 	)
 	(embedded_fonts no)
+	(model "C:/Users/Антон/StarLight/3D/Components/Capacitor.stp"
+		(offset
+			(xyz 2.5 0 -4)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -90)
+		)
+	)
 )

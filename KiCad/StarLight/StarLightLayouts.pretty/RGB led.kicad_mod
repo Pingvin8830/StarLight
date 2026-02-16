@@ -112,7 +112,7 @@
 			)
 		)
 	)
-	(pad "1" thru_hole circle
+	(pad "BLUE" thru_hole circle
 		(at 0 0)
 		(size 1.2 1.2)
 		(drill 0.8)
@@ -120,7 +120,7 @@
 		(remove_unused_layers no)
 		(uuid "81457606-4280-48db-8fbc-9fdb5e82ef18")
 	)
-	(pad "2" thru_hole circle
+	(pad "GREEN" thru_hole circle
 		(at 1.4 0)
 		(size 1.2 1.2)
 		(drill 0.8)
@@ -128,15 +128,7 @@
 		(remove_unused_layers no)
 		(uuid "16c9a527-84e3-4664-a97e-c5d949fe296a")
 	)
-	(pad "3" thru_hole rect
-		(at 2.8 0)
-		(size 1.2 1.2)
-		(drill 0.8)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "1e4fd9db-ffd7-47b4-b19b-4926656c0d7a")
-	)
-	(pad "4" thru_hole circle
+	(pad "RED" thru_hole circle
 		(at 4.2 0)
 		(size 1.2 1.2)
 		(drill 0.8)
@@ -144,5 +136,24 @@
 		(remove_unused_layers no)
 		(uuid "0e03c288-309c-465d-b2fb-22375acfe1e8")
 	)
+	(pad "VIN" thru_hole rect
+		(at 2.8 0)
+		(size 1.2 1.2)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1e4fd9db-ffd7-47b4-b19b-4926656c0d7a")
+	)
 	(embedded_fonts no)
+	(model "C:/Users/Антон/StarLight/3D/Components/LED5RGB.stp"
+		(offset
+			(xyz 2.13 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
 )

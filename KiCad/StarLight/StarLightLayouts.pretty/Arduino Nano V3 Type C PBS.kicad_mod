@@ -368,4 +368,26 @@
 		(uuid "b0a7a338-6ad9-4e23-9e77-bad869eff8f9")
 	)
 	(embedded_fonts no)
+	(model "C:/Users/Антон/StarLight/3D/Components/PBS-16.stp"
+		(offset
+			(xyz -1.5 -1.2 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 90)
+		)
+	)
+	(model "C:/Users/Антон/StarLight/3D/Components/PBS-16.stp"
+		(offset
+			(xyz -1.5 14 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 90)
+		)
+	)
 )

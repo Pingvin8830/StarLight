@@ -180,4 +180,15 @@
 		(uuid "33252af1-7231-471d-9b71-23c95d254161")
 	)
 	(embedded_fonts no)
+	(model "C:/Users/Антон/StarLight/3D/Components/SOT-223.stp"
+		(offset
+			(xyz 2.25 3.15 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
 )

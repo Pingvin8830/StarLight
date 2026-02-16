@@ -128,4 +128,15 @@
 		(uuid "29e6a007-1545-4954-99f2-025ea956b08b")
 	)
 	(embedded_fonts no)
+	(model "C:/Users/Антон/StarLight/3D/Components/B2B-XH-A.stp"
+		(offset
+			(xyz -2.5 -2.3 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 90)
+		)
+	)
 )

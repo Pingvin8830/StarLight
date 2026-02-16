@@ -129,4 +129,15 @@
 		(uuid "830cad45-3054-485e-9d53-3a74ff2d0056")
 	)
 	(embedded_fonts no)
+	(model "C:/Users/Антон/StarLight/3D/Components/PLS-2.stp"
+		(offset
+			(xyz 0 0 -3)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
 )

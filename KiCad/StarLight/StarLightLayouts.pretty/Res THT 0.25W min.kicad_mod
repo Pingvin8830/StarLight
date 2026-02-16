@@ -151,4 +151,15 @@
 		(uuid "a85727a1-acb4-4bb8-964f-c55e198c2701")
 	)
 	(embedded_fonts no)
+	(model "C:/Users/Антон/StarLight/3D/Components/Resistor025W.stp"
+		(offset
+			(xyz 0 0 -2)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
 )

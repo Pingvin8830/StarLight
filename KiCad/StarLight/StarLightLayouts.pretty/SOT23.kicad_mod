@@ -164,4 +164,15 @@
 		(uuid "07a6e96d-8e22-494b-8d18-7acba94541a5")
 	)
 	(embedded_fonts no)
+	(model "C:/Users/Антон/StarLight/3D/Components/SOT23.stp"
+		(offset
+			(xyz 1 1 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
 )
