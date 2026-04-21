@@ -75,7 +75,7 @@
 			(type solid)
 		)
 		(fill no)
-		(layer "F.SilkS")
+		(layer "B.SilkS")
 		(uuid "fdfed52f-bfa4-4d24-aa53-3d1b7b8b5f02")
 	)
 	(fp_circle
@@ -86,7 +86,7 @@
 			(type solid)
 		)
 		(fill no)
-		(layer "F.CrtYd")
+		(layer "B.CrtYd")
 		(uuid "ddc82077-ce57-456c-934c-963a964580ea")
 	)
 	(fp_circle
@@ -97,7 +97,7 @@
 			(type solid)
 		)
 		(fill no)
-		(layer "F.Fab")
+		(layer "B.Fab")
 		(uuid "0be9df3e-847d-4d39-9cc4-e5cd4e3cd4dc")
 	)
 	(fp_text user "${REFERENCE}"

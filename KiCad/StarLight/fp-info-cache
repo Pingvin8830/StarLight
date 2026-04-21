@@ -1,4 +1,4 @@
-17710809115526
+23043265794479
 StarLightLayouts
 Arduino Nano V3 Type C PBS
 
@@ -56,6 +56,13 @@ res r tht
 2
 2
 StarLightLayouts
+SMD 0805
+
+
+0
+2
+2
+StarLightLayouts
 SOT-223
 
 
@@ -66,6 +73,20 @@ StarLightLayouts
 SOT23
 
 sot23
+0
+3
+3
+StarLightLayouts
+TO-92
+
+
+0
+3
+3
+StarLightLayouts
+TO-220
+
+
 0
 3
 3

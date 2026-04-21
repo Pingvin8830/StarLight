@@ -3946,7 +3946,7 @@
 				(hide yes)
 			)
 		)
-		(property "С" "10 mk"
+		(property "С" "0.33 mk"
 			(at 30.48 54.61 0)
 			(effects
 				(font
@@ -4007,7 +4007,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "StarLightLayouts:SOT23"
+		(property "Footprint" "StarLightLayouts:TO-92"
 			(at 130.81 53.34 0)
 			(effects
 				(font
@@ -4336,7 +4336,7 @@
 				)
 			)
 		)
-		(property "Footprint" "StarLightLayouts:Res THT 0.25W min"
+		(property "Footprint" "StarLightLayouts:SMD 0805"
 			(at 35.56 98.298 90)
 			(effects
 				(font
@@ -4469,7 +4469,7 @@
 				(hide yes)
 			)
 		)
-		(property "С" "10 mk"
+		(property "С" "0.1 mk"
 			(at 45.72 54.61 0)
 			(effects
 				(font
@@ -4627,7 +4627,7 @@
 				)
 			)
 		)
-		(property "Footprint" "StarLightLayouts:Res THT 0.25W min"
+		(property "Footprint" "StarLightLayouts:SMD 0805"
 			(at 35.56 93.218 90)
 			(effects
 				(font
@@ -5365,7 +5365,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "StarLightLayouts:SOT23"
+		(property "Footprint" "StarLightLayouts:TO-92"
 			(at 113.03 66.04 0)
 			(effects
 				(font
@@ -5483,7 +5483,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "StarLightLayouts:SOT23"
+		(property "Footprint" "StarLightLayouts:TO-92"
 			(at 121.92 59.69 0)
 			(effects
 				(font
@@ -5598,7 +5598,7 @@
 				)
 			)
 		)
-		(property "Footprint" "StarLightLayouts:Res THT 0.25W min"
+		(property "Footprint" "StarLightLayouts:SMD 0805"
 			(at 35.56 103.378 90)
 			(effects
 				(font
@@ -5869,7 +5869,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "StarLightLayouts:SOT-223"
+		(property "Footprint" "StarLightLayouts:TO-220"
 			(at 38.1 25.4 0)
 			(effects
 				(font
