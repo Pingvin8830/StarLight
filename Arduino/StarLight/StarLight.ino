@@ -9,63 +9,114 @@
 
 */
 
+const bool DEBUG = true;
+
+
 #include "colors.h"
 
-const byte RED_PIN   = 11;
-const byte GREEN_PIN = 10;
-const byte BLUE_PIN  = 9;
-
-const byte RED_CONTROL_PIN   = A0;
+const byte RED_CONTROL_PIN   = A2;
 const byte GREEN_CONTROL_PIN = A1;
-const byte BLUE_CONTROL_PIN  = A2;
+const byte BLUE_CONTROL_PIN  = A0;
+const byte MODE_PIN          = 2;
 
-const byte MODE_PIN = 2;
+const bool AUTO   = true;
+const bool MANUAL = false;
 
-bool isManualMode = false; // Режим работы. 0 - авто, 1 - ручной
+const byte RED_PIN   = 9;
+const byte GREEN_PIN = 10;
+const byte BLUE_PIN  = 11;
 
-int redLevel   = 0;
-int greenLevel = 0;
-int blueLevel  = 0;
+const byte COLORS_COUNT = 6;
 
-unsigned long lastControl;
+int redRaw;
+int greenRaw;
+int blueRaw;
 
-byte autoStep = 0;
-int speed = 0;
+byte redValue;
+byte greenValue;
+byte blueValue;
+
+bool mode;
+
+unsigned long lastControl = 0;
+
+int colorNum = 0;
+int nextColorNum = 1;
+
+int moment;
 
 
 void setup() {
-  // put your setup code here, to run once:
   pinMode(RED_PIN,   OUTPUT);
   pinMode(GREEN_PIN, OUTPUT);
   pinMode(BLUE_PIN,  OUTPUT);
   pinMode(MODE_PIN,  INPUT_PULLUP);
 
-  digitalWrite(RED_PIN,   HIGH);
-  digitalWrite(GREEN_PIN, HIGH);
-  digitalWrite(BLUE_PIN,  HIGH);
-
-  lastControl = millis();
+  if (DEBUG) {
+    Serial.begin(115200);
+    Serial.println("Start program");
+    Serial.println();
+  }
 }
 
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  isManualMode = digitalRead(MODE_PIN);
-  if (isManualMode) {
-    analogWrite(RED_PIN,   analogRead(RED_CONTROL_PIN));
-    analogWrite(GREEN_PIN, analogRead(GREEN_CONTROL_PIN));
-    analogWrite(BLUE_PIN,  analogRead(BLUE_CONTROL_PIN));
-    autoStep = 0;
-    lastControl = millis();
+  redRaw   = analogRead(RED_CONTROL_PIN);
+  greenRaw = analogRead(GREEN_CONTROL_PIN);
+  blueRaw  = analogRead(BLUE_CONTROL_PIN);
+  mode     = digitalRead(MODE_PIN);
+
+  if (mode == MANUAL) {
+    redValue   = map(redRaw,   0, 1023, 0, 255);
+    greenValue = map(greenRaw, 0, 1023, 0, 255);
+    blueValue  = map(blueRaw,  0, 1023, 0, 255);
+    if (redValue==0 and greenValue==0 and blueValue==0) {
+      redValue   = 1;
+      greenValue = 1;
+      blueValue  = 1;
+    }
+
   } else {
-    speed = 1023 - analogRead(RED_CONTROL_PIN);
-    if (millis() - lastControl > speed) {
-      autoStep++;
+    redRaw = 1023 - redRaw;
+    if (millis() - lastControl > redRaw) {
+      if (greenRaw < 512) {
+        colorNum--;
+        nextColorNum = colorNum - 1;
+      } else {
+        colorNum++;
+        nextColorNum = colorNum + 1;
+      }
+      if (colorNum >= COLORS_COUNT) {
+        colorNum = 0;
+        nextColorNum = 1;
+      }
+      if (colorNum < 0) {
+        colorNum = COLORS_COUNT - 1;
+        nextColorNum = COLORS_COUNT - 2;
+      }
+      if (nextColorNum >= COLORS_COUNT) nextColorNum = 0;
+      if (nextColorNum < 0) nextColorNum = COLORS_COUNT - 1;
       lastControl = millis();
     }
-    if (autoStep > 23) autoStep = 0;
-    analogWrite(RED_PIN,   255 - COLORS[autoStep][0]);
-    analogWrite(GREEN_PIN, 255 - COLORS[autoStep][1]);
-    analogWrite(BLUE_PIN,  255 - COLORS[autoStep][2]);
+
+    moment = (millis() - lastControl);
+    redValue   = map(moment, 0, redRaw, COLORS[colorNum][0], COLORS[nextColorNum][0]);
+    greenValue = map(moment, 0, redRaw, COLORS[colorNum][1], COLORS[nextColorNum][1]);
+    blueValue =  map(moment, 0, redRaw, COLORS[colorNum][2], COLORS[nextColorNum][2]);
+  }
+
+  analogWrite(RED_PIN,   redValue);
+  analogWrite(GREEN_PIN, greenValue);
+  analogWrite(BLUE_PIN,  blueValue);
+
+  if (DEBUG) {
+    Serial.print("Red: ");   Serial.print(redRaw);   Serial.print('/'); Serial.print(redValue);   Serial.print('\t');
+    Serial.print("Green: "); Serial.print(greenRaw); Serial.print('/'); Serial.print(greenValue); Serial.print('\t');
+    Serial.print("Blue: ");  Serial.print(blueRaw);  Serial.print('/'); Serial.print(blueValue);  Serial.print('\t');
+    Serial.print("Mode: ");  Serial.print(mode);     Serial.print('\t');
+    Serial.print("Moment: "); Serial.print(moment); Serial.print('\t');
+    Serial.print("Color num: "); Serial.print(colorNum); Serial.print("\t("); Serial.print(COLORS[colorNum][0]); Serial.print(","); Serial.print(COLORS[colorNum][1]); Serial.print(","); Serial.print(COLORS[colorNum][2]); Serial.print(")\t");
+    Serial.print("Next color num: "); Serial.print(nextColorNum); Serial.print("\t("); Serial.print(COLORS[nextColorNum][0]); Serial.print(","); Serial.print(COLORS[nextColorNum][1]); Serial.print(","); Serial.print(COLORS[nextColorNum][2]); Serial.print(")\t");
+    Serial.println();
   }
 }
